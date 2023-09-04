@@ -4,38 +4,40 @@
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
-This is a pay by card checkout page 
+This is a pay by card checkout page
 
 ### The challenge
 
-Users should be able to:
+Page should be able to:
 
-- 
+- After the first four numbers, without clicking to go to the next box, the fifth number should appear in the next box.
+- On entering the numbers, change the card's logo to either Visa, MasterCard or American Express Logo
+- On clicking submit, an alert should say, "Your payment was successful." Make sure all items are validated before showing the alert.
+
 - Receive validation errors if:
+
   - Any field is empty when the form is submitted
-  - 
-  - 
-  - 
-  - 
+  - Card Numbers aren't numbers
+  - Card holder isn't two names
+  - cvv isn't number
+  - expiry is empty
+
 - View the optimal layout for the interface depending on their device's screen size
-- 
+-
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Repo URL: (https://github.com/that-loui/Zuri-payByCard)
+- Live Site URL: (https://that-loui.github.io/Zuri-payByCard)
 
 ## My process
 
@@ -159,7 +161,5 @@ i tried to create my own library of Ui functions
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Zuri Student ID[]
+- Zuri Student ID[ZUR0001972HT](https://cdt.zuriboard.com/user/profile/197)
 - Twitter - [@LMacjob](https://www.twitter.com/LMacjob)
-

@@ -163,4 +163,3 @@ i tried to create my own library of Ui functions
 - Zuri Student ID[]
 - Twitter - [@LMacjob](https://www.twitter.com/LMacjob)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**

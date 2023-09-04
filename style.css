@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input {
+  border: 1px solid #cbd5b2;
+  border-radius: 5px;
+}
+
+select {
+  appearance: none;
+  background-image: url(./assets/caret-down-fill.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  opacity: 50%;
+  padding: 5px 17px 5px 5px;
+  margin: 0 5px 0 5px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+select option {
+  text-align: center;
+  display: grid;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+.container {
+  background: linear-gradient(to bottom, #cbd5b2, #d4cda1);
+  height: 100vh;
+  position: relative;
+  padding: 20px 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardContainer {
+  background: linear-gradient(to right, #ffe74e, #ffbb00);
+  color: #adaa01;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  width: 90%;
+  position: absolute;
+}
+.cardContainer .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.cardContainer .cardHead img {
+  width: 60px;
+  height: 60px;
+}
+.cardContainer .cardHead .cardType {
+  width: 60px;
+  height: 60px;
+  background-image: url(./assets/Visa_Inc.-Logo.wine.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cardContainer .cardBody {
+  margin: 20px 0;
+  font-size: 20px;
+}
+.cardContainer .cardFooter .footerItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cardContainer .cardFooter .footerItem div {
+  height: 15px;
+}
+.cardContainer .cardFooter small {
+  font-size: 9px;
+  margin-bottom: 5px;
+}
+
+.inputField {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding: 20px;
+  height: 95%;
+  width: 100%;
+  margin-top: 100px;
+  border-radius: 30px 30px 0 0;
+  background-color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  height: fit-content;
+  width: 100%;
+  margin-top: 100px;
+}
+form .input-error {
+  border: 2px solid red;
+}
+form .input-error:focus {
+  border-color: red;
+  outline-color: red;
+}
+form label {
+  font-size: 9px;
+}
+form .numberCont {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px auto 20px auto;
+  width: 100%;
+}
+form .numberCont input {
+  width: 25%;
+  padding: 8px 5px;
+  margin: 0 5px;
+  font-size: 20px;
+  text-align: center;
+}
+form #name {
+  padding: 8px 5px;
+  width: 100%;
+  margin: 5px auto 10px auto;
+}
+form .extraDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+form .extraDetails .date {
+  display: flex;
+}
+form .cvvContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 100%;
+}
+form .cvvContainer input {
+  padding: 5px;
+  width: 50px;
+  text-align: center;
+}
+form .submit {
+  width: 100%;
+  padding: 10px;
+  margin: 20px auto;
+  background-color: #d4cda1;
+  color: #fff;
+  font-size: 20px;
+}
+
+.successMsg {
+  display: none;
+  margin-top: 10rem;
+  flex-direction: column;
+  width: 100%;
+  background-color: #fff;
+}
+.successMsg div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.successMsg h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  color: green;
+}
+.successMsg img {
+  width: 30%;
+  color: green;
+}
+.successMsg button {
+  background-color: hsl(117, 84%, 29%);
+  color: hsl(0, 0%, 100%);
+  padding: 20px;
+  margin-top: 20px;
+}
+.successMsg button:hover {
+  background-color: hsl(4, 100%, 67%);
+  color: hsl(0, 0%, 100%);
+}
+
+@media (min-width: 650px) {
+  .container {
+    padding: 30px;
+    max-width: 500px;
+  }
+  .cardContainer {
+    width: 80%;
+  }
+  .cardContainer .cardBody {
+    font-size: 30px;
+  }
+  .inputField {
+    border-radius: 30px 30px 30px 30px;
+    padding: 30px;
+  }
+  .successMsg {
+    width: 500px;
+  }
+}

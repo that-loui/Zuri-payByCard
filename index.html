@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment By Card | Pay</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="cardContainer">
+        <div class="cardHead card">
+          <img src="./assets/chip.png" alt="chipIcon" />
+          <div class="cardType"></div>
+        </div>
+        <div class="cardBody card">
+          <div class="numberOUT out1">0000</div>
+          <div class="numberOUT out2">0000</div>
+          <div class="numberOUT out3">0000</div>
+          <div class="numberOUT out4">0000</div>
+        </div>
+        <div class="cardFooter card">
+          <div class="userName footerItem">
+            <small>CARD HOLDER</small>
+            <div class="cardHolder"></div>
+          </div>
+          <div class="expiryDate footerItem">
+            <small>EXPIRES</small>
+            <div>
+              <span class="monthOut"></span> | <span class="yearOut"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="inputField">
+        <form action="#" class="form">
+          <label for="number1">CARD NUMBER</label>
+          <div class="numberCont">
+            <input
+              type="text"
+              name="number1"
+              id="number1"
+              maxlength="4"
+              class="number number1"
+            />
+            <input
+              type="text"
+              name="number2"
+              id="number2"
+              maxlength="4"
+              class="number number2"
+            />
+            <input
+              type="text"
+              name="number3"
+              id="number3"
+              maxlength="4"
+              class="number number3"
+            />
+            <input
+              type="text"
+              name="number4"
+              id="number4"
+              maxlength="4"
+              class="number number4"
+            />
+          </div>
+          <label for="name">CARD HOLDER</label>
+          <input
+            type="text"
+            name="holderName"
+            id="name"
+            class="name"
+            minlength="2"
+            maxlength="40"
+          />
+
+          <div class="extraDetails">
+            <div class="expiryDate">
+              <label for="months">EXPIRY DATE</label>
+              <div class="date">
+                <select name="months" id="months">
+                  <option value=""></option>
+                  <option value="01">JAN</option>
+                  <option value="02">FEB</option>
+                  <option value="03">MAR</option>
+                  <option value="04">APR</option>
+                  <option value="05">MAY</option>
+                  <option value="06">JUN</option>
+                  <option value="07">JUL</option>
+                  <option value="08">AUG</option>
+                  <option value="09">SEP</option>
+                  <option value="10">OCT</option>
+                  <option value="11">NOV</option>
+                  <option value="12">DEC</option>
+                </select>
+                <select name="years" id="years" required>
+                  <option value=""></option>
+                  <option value="23">2023</option>
+                  <option value="24">2024</option>
+                  <option value="25">2025</option>
+                  <option value="26">2026</option>
+                  <option value="27">2027</option>
+                  <option value="28">2028</option>
+                </select>
+              </div>
+            </div>
+            <div class="cvvContainer">
+              <label for="cvv">CVV</label>
+              <input
+                type="password"
+                name="cvv"
+                id="cvv"
+                maxlength="4"
+                minlength="3"
+                required
+              />
+            </div>
+          </div>
+          <input type="submit" value="submit" class="submit" />
+        </form>
+      </section>
+    </main>
+    <div class="successMsg">
+      <div>
+        <img src="./assets/icon-success.svg" alt="" />
+        <h1>SUCCESS</h1>
+      </div>
+
+      <button class="dismiss">RETURN</button>
+    </div>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>

@@ -29,12 +29,10 @@ inputs.forEach((input, index, array) => {
     // check if input is valid and change focus
     if (UI.validateInput(input)) {
       UI.changeFocus(input, index, array, nameInput);
-      if (UI.changeFocus(input, index, array, nameInput)) {
-        UI.outputInput(input1, output1);
-        UI.outputInput(input2, output2);
-        UI.outputInput(input3, output3);
-        UI.outputInput(input4, output4);
-      }
+      UI.outputInput(input1, output1);
+      UI.outputInput(input2, output2);
+      UI.outputInput(input3, output3);
+      UI.outputInput(input4, output4);
     }
     if (input.classList.contains('number1')) {
       UI.changeCardType(input1, cardType);
